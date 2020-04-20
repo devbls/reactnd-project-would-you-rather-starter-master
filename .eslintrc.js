@@ -1,4 +1,4 @@
-  
+
 module.exports = {
   env: {
     browser: true,
@@ -28,7 +28,7 @@ module.exports = {
     'react-hooks'
   ],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['error', {"endOfLine":"auto"}],
     'react/jsx-filename-extension': [
       'error',
       {extensions: ['.js', '.jsx']}
@@ -43,6 +43,8 @@ module.exports = {
     camelcase: 'off',
     'no-console': ["error", {allow: ["tron"]}],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0
   },
 };
